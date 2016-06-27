@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{749E9AA2-076D-8FC5-9807-EB8A4F497E51}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_2;UNITY_4_5;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scrpts\BgMusic.js" />
+     <Compile Include="Assets\Scrpts\BonusDestroyer.js" />
+     <Compile Include="Assets\Scrpts\BonusInfo.js" />
+     <Compile Include="Assets\Scrpts\BonusPoints.js" />
+     <Compile Include="Assets\Scrpts\BubbleInfo.js" />
+     <Compile Include="Assets\Scrpts\BubbleSound.js" />
+     <Compile Include="Assets\Scrpts\Fader.js" />
+     <Compile Include="Assets\Scrpts\GameManager.js" />
+     <Compile Include="Assets\Scrpts\GameOver.js" />
+     <Compile Include="Assets\Scrpts\GameOverScore.js" />
+     <Compile Include="Assets\Scrpts\GameOverTimer.js" />
+     <Compile Include="Assets\Scrpts\Menu Buttons Scripts\CreditsMenuControl.js" />
+     <Compile Include="Assets\Scrpts\Menu Buttons Scripts\GameOverMenuControl.js" />
+     <Compile Include="Assets\Scrpts\Menu Buttons Scripts\HomePageMenuControl.js" />
+     <Compile Include="Assets\Scrpts\Menu Buttons Scripts\HowToPlayMenuControl.js" />
+     <Compile Include="Assets\Scrpts\Menu Buttons Scripts\ScoresMenuControl.js" />
+     <Compile Include="Assets\Scrpts\Menu Buttons Scripts\SettingsMenuControl.js" />
+     <Compile Include="Assets\Scrpts\Page Title Scripts\CreditsTitle.js" />
+     <Compile Include="Assets\Scrpts\Page Title Scripts\HowToPlayTitle.js" />
+     <Compile Include="Assets\Scrpts\Page Title Scripts\ScoresPageTitle.js" />
+     <Compile Include="Assets\Scrpts\Page Title Scripts\SettingsTitle.js" />
+     <Compile Include="Assets\Scrpts\PauseManager.js" />
+     <Compile Include="Assets\Scrpts\PausedHowToPlayWindow.js" />
+     <Compile Include="Assets\Scrpts\PlayersScore.js" />
+     <Compile Include="Assets\Scrpts\ScoreManager.js" />
+     <Compile Include="Assets\Scrpts\ScorePage.js" />
+     <Compile Include="Assets\Scrpts\ScreenDimensions.js" />
+     <Compile Include="Assets\Scrpts\ScrollingScript.js" />
+     <Compile Include="Assets\Scrpts\SoundManager.js" />
+     <Compile Include="Assets\Scrpts\TargetInfo.js" />
+     <Compile Include="Assets\Scrpts\VolumeControls.js" />
+     <Compile Include="Assets\Scrpts\VolumeManager.js" />
+     <Compile Include="Assets\Scrpts\bubbleControll.js" />
+     <Compile Include="Assets\Scrpts\bubbleMaker.js" />
+     <Compile Include="Assets\Scrpts\playerControl.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
